@@ -115,6 +115,13 @@ def parse_capacity(value: object) -> int | None:
         return None
 
 
+def parse_city(value: object) -> str | None:
+    text = clean(value)
+    if text is None:
+        return None
+    return clean(text.rstrip(","))
+
+
 def parse_zip(value: object) -> str | None:
     text = clean(value)
     if text is None:
@@ -151,7 +158,7 @@ def normalize(record: dict, today: date) -> dict:
         "address_line1": clean(record.get("Facility_Address1")),
         "address_line2": clean(record.get("Facility_Address2")),
         "additional_locations": clean(record.get("Additional_Facility_Locations")),
-        "city": clean(record.get("Facility_City")),
+        "city": parse_city(record.get("Facility_City")),
         "state": clean(record.get("Facility_State")),
         "zip": parse_zip(record.get("Facility_Zip")),
         "county": clean(record.get("CountyName")),

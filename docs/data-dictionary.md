@@ -12,7 +12,7 @@ upstream name so every value can be traced back to the publisher.
 | `address_line1` | string | `Facility_Address1` | |
 | `address_line2` | string | `Facility_Address2` | Empty for 67% of records. |
 | `additional_locations` | string | `Additional_Facility_Locations` | Free text. Empty for 86% of records. |
-| `city` | string | `Facility_City` | |
+| `city` | string | `Facility_City` | Trailing commas present in the source are removed. |
 | `state` | string | `Facility_State` | Always `CA`. |
 | `zip` | string | `Facility_Zip` | Five digits, or `ZZZZZ-NNNN` where a plus-four is present. |
 | `county` | string | `CountyName` | All 58 California counties appear. |
