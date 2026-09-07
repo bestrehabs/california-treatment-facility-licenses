@@ -20,7 +20,7 @@ how treatment capacity shifts by county.
 | Residential (licensed) | 1,063 |
 | Outpatient and other (certified) | 1,203 |
 | Offering detoxification | 1,041 |
-| Listed with an expired license | 25 |
+| Listed with an expired license | 60 |
 | Total reported capacity | 21,342 beds |
 <!-- end:snapshot -->
 
