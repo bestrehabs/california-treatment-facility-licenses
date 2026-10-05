@@ -1,12 +1,12 @@
 {
-  "content_sha256": "a5852102080e3d92fa9b1364c6ce806e02b8658b2761b82f4d682a9d2e01915a",
+  "content_sha256": "9c8f609f4ad07f179e1a8bc46e2030ca1b980be7f0058c6cf08e1099b9b94784",
   "county_count": 58,
   "dataset_url": "https://data.ca.gov/dataset/sud-recovery-treatment-facilities",
   "detox_count": 1041,
-  "expired_count": 60,
+  "expired_count": 129,
   "license": "CC-BY 4.0, California Open Data Portal",
-  "normalized_at": "2026-09-07T11:35:45Z",
+  "normalized_at": "2026-10-05T19:39:38Z",
   "publisher": "California Department of Health Care Services",
   "record_count": 2266,
-  "retrieved_at": "2026-09-07T11:35:45Z"
+  "retrieved_at": "2026-10-05T19:39:38Z"
 }
