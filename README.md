@@ -15,13 +15,13 @@ how treatment capacity shifts by county.
 <!-- begin:snapshot -->
 | Measure | Value |
 | --- | ---: |
-| Facilities | 2,266 |
+| Facilities | 2,287 |
 | Counties covered | 58 of 58 |
-| Residential (licensed) | 1,063 |
-| Outpatient and other (certified) | 1,203 |
-| Offering detoxification | 1,041 |
-| Listed with an expired license | 217 |
-| Total reported capacity | 21,342 beds |
+| Residential (licensed) | 1,055 |
+| Outpatient and other (certified) | 1,232 |
+| Offering detoxification | 1,044 |
+| Listed with an expired license | 0 |
+| Total reported capacity | 21,268 beds |
 <!-- end:snapshot -->
 
 ## Files
@@ -40,11 +40,11 @@ A few rows, abridged to seven of the twenty-six columns:
 <!-- begin:sample -->
 | Facility | City | County | Setting | Detox | Capacity | Expires |
 | --- | --- | --- | --- | --- | ---: | --- |
-| CHRYSALIS | OAKLAND | Alameda County | RES | false | 20 | 2027-10-31 |
-| HEALTHRIGHT 360 | LOS ANGELES | Los Angeles County | RES | false | 200 | 2026-09-30 |
-| RESEDA RECOVERY CENTER INC | RESEDA | Los Angeles County | RES | true | 6 | 2027-04-30 |
-| CHRISTOPHER CARE CHOOSING LIFE | MISSION VIEJO | Orange County | RES | true | 6 | 2027-12-31 |
-| SOLUTIONS FOR RECOVERY | SAN DIEGO | San Diego County | NON | true | 0 | 2027-11-30 |
+| CRONIN HOUSE | HAYWARD | Alameda County | RES | false | 52 |  |
+| PROTOTYPES OUTPATIENT BEHAVIORAL HEALTH SERVICES CENTER, POMONA | POMONA | Los Angeles County | NON | false | 0 |  |
+| SPECIALTY REHABILITATION CENTER | SANTA CLARITA | Los Angeles County | RES | true | 6 |  |
+| HARMONY JUNCTION RECOVERY | LAKE FOREST | Orange County | RES | true | 18 |  |
+| CROWNVIEW CO-OCCURRING INSTITUTE INCORPORATED | OCEANSIDE | San Diego County | NON | false | 0 |  |
 <!-- end:sample -->
 
 ## What normalization does
@@ -72,37 +72,37 @@ concentrated in residential settings; most outpatient programs report zero beds.
 <!-- begin:counties -->
 | County | Facilities | Residential | Outpatient | Detox | Capacity |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Los Angeles | 826 | 455 | 371 | 479 | 7,758 |
-| Orange | 298 | 163 | 135 | 166 | 2,044 |
-| San Diego | 179 | 67 | 112 | 79 | 1,871 |
-| Riverside | 127 | 65 | 62 | 60 | 1,224 |
-| Sacramento | 65 | 27 | 38 | 23 | 712 |
-| Ventura | 59 | 28 | 31 | 32 | 447 |
-| San Bernardino | 58 | 19 | 39 | 20 | 781 |
+| Los Angeles | 834 | 448 | 386 | 477 | 7,564 |
+| Orange | 305 | 159 | 146 | 164 | 2,027 |
+| San Diego | 184 | 71 | 113 | 83 | 1,995 |
+| Riverside | 126 | 63 | 63 | 59 | 1,222 |
+| Sacramento | 64 | 27 | 37 | 22 | 712 |
+| San Bernardino | 59 | 22 | 37 | 22 | 788 |
+| Ventura | 59 | 27 | 32 | 31 | 447 |
 | Fresno | 46 | 16 | 30 | 17 | 747 |
-| Alameda | 42 | 15 | 27 | 3 | 401 |
-| Contra Costa | 38 | 16 | 22 | 10 | 334 |
-| Kern | 37 | 11 | 26 | 7 | 333 |
-| Sonoma | 35 | 12 | 23 | 14 | 305 |
-| San Francisco | 34 | 12 | 22 | 6 | 691 |
-| Placer | 32 | 16 | 16 | 16 | 142 |
+| Alameda | 40 | 14 | 26 | 3 | 381 |
+| Contra Costa | 38 | 16 | 22 | 10 | 340 |
+| Kern | 38 | 12 | 26 | 8 | 339 |
+| Placer | 34 | 17 | 17 | 17 | 158 |
+| San Francisco | 34 | 12 | 22 | 7 | 691 |
+| Sonoma | 34 | 12 | 22 | 14 | 305 |
 | Santa Barbara | 30 | 11 | 19 | 8 | 223 |
-| Marin | 29 | 14 | 15 | 14 | 308 |
 | Santa Clara | 29 | 8 | 21 | 8 | 239 |
+| Marin | 28 | 14 | 14 | 14 | 308 |
 | San Mateo | 22 | 11 | 11 | 2 | 186 |
-| San Joaquin | 19 | 7 | 12 | 7 | 228 |
+| San Joaquin | 20 | 7 | 13 | 7 | 228 |
 | Santa Cruz | 19 | 8 | 11 | 4 | 242 |
+| Stanislaus | 19 | 5 | 14 | 4 | 174 |
 | Tulare | 19 | 8 | 11 | 3 | 194 |
 | Monterey | 18 | 6 | 12 | 6 | 159 |
-| Stanislaus | 18 | 5 | 13 | 4 | 162 |
+| El Dorado | 15 | 6 | 9 | 5 | 127 |
 | Butte | 13 | 4 | 9 | 1 | 116 |
-| El Dorado | 13 | 6 | 7 | 3 | 127 |
-| San Luis Obispo | 13 | 4 | 9 | 7 | 66 |
+| San Luis Obispo | 13 | 4 | 9 | 8 | 66 |
 | Shasta | 13 | 4 | 9 | 2 | 126 |
 | Solano | 12 | 5 | 7 | 2 | 98 |
-| Sutter | 10 | 4 | 6 | 3 | 44 |
-| Kings | 8 | 3 | 5 | 3 | 60 |
-| Mendocino | 8 | 1 | 7 | 1 | 64 |
+| Sutter | 11 | 4 | 7 | 3 | 44 |
+| Mendocino | 9 | 1 | 8 | 1 | 64 |
+| Kings | 7 | 2 | 5 | 2 | 54 |
 | Yolo | 7 | 2 | 5 | 3 | 100 |
 | Humboldt | 6 | 3 | 3 | 2 | 140 |
 | Lake | 6 | 2 | 4 | 0 | 75 |
@@ -119,7 +119,6 @@ concentrated in residential settings; most outpatient programs report zero beds.
 | Tehama | 4 | 2 | 2 | 1 | 39 |
 | Glenn | 3 | 0 | 3 | 1 | 0 |
 | Mariposa | 3 | 1 | 2 | 1 | 12 |
-| (not reported) | 2 | 1 | 1 | 1 | 6 |
 | Amador | 2 | 1 | 1 | 1 | 6 |
 | Inyo | 2 | 0 | 2 | 0 | 0 |
 | Sierra | 2 | 0 | 2 | 0 | 0 |
@@ -131,7 +130,7 @@ concentrated in residential settings; most outpatient programs report zero beds.
 | Modoc | 1 | 0 | 1 | 0 | 0 |
 | Mono | 1 | 0 | 1 | 0 | 0 |
 | Plumas | 1 | 0 | 1 | 0 | 0 |
-| **Statewide** | **2,266** | **1,063** | **1,203** | **1,041** | **21,342** |
+| **Statewide** | **2,287** | **1,055** | **1,232** | **1,044** | **21,268** |
 <!-- end:counties -->
 
 ## Running locally
